@@ -13,6 +13,9 @@ public class Organization {
 
     public static void main(String[] args) {
         Employee managerJunior = new ManagerJunior();
-        int award = managerJunior.position.award();
+        System.out.println(managerJunior);
+
+//        Employee developerSenior = new DeveloperSenior();
+
     }
 }

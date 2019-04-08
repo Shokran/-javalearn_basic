@@ -1,6 +1,7 @@
 public abstract class Employee {
     Position position;
     Grade grade;
+    Subordinates subordinates;
 
     public Employee() {
     }
@@ -11,6 +12,14 @@ public abstract class Employee {
     }
 
     public void performGrade() {
+        grade.bonus();
+    }
 
+    public void performSubordinates() {
+        subordinates.slaves();
+    }
+
+    public void setSubordinates(Subordinates sb) {
+        subordinates = sb;
     }
 }
