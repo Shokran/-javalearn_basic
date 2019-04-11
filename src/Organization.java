@@ -1,8 +1,17 @@
+import Employee.DeveloperSenior;
+import Employee.ManagerSenior;
+import Employee.ManagerMiddle;
+import Employee.InternEmployee;
+import Position.Developer;
+import Position.Manager;
+import Position.Intern;
+import Grade.Junior;
+
 /**
  * Спроектировать иерархию органиазации с помощью классов и наследования.
  * <p>
- * В организации работают Manager'ы и Developer'ы и Intern'ы.
- * Как для менеджеров так и для разработчиков  существует 3 грэйда junior, middle, senior(у Intern нет).
+ * В организации работают Position.Manager'ы и Position.Position.Developer'ы и Position.Intern'ы.
+ * Как для менеджеров так и для разработчиков  существует 3 грэйда junior, middle, senior(у Position.Intern нет).
  * Каждый грэйд увеличивает базовую ставку премии на 10% (не более 30%)
  * <p>
  * Зп senior рассчитывается исходя из зп + 5% за каждого стажера.
@@ -22,7 +31,7 @@ public class Organization {
          Мы тупанули и поставили манагеру сеньору Диме 0 подчинённых
          Пока логика нам изменит на положенный минимум в 1
          Можем сделать так чтобы программа просто перестала выполняться с ошибкой
-         Сделать это можно в блоке обработки ошибок подчинённых в классе Senior
+         Сделать это можно в блоке обработки ошибок подчинённых в классе Grade.Grade.Senior
          */
         ManagerSenior dima = new ManagerSenior(0);
         System.out.println("Зарплата Димы по стандартным ставкам с автоподстановкой подчинённого: " + dima.getSalary());
