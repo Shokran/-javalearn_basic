@@ -1,4 +1,4 @@
 public interface Position {
-    public int rate();
-    public int award();
+    public double rate();
+    public double award();
 }

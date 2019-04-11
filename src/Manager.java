@@ -1,8 +1,22 @@
 public class Manager implements Position {
-    public int rate() {
-        return 35000;
+    // Базовая ставка зарплаты по умолчанию для этого грейда
+    private double rate = 35000;
+    // Базовая ставка премии по умолчанию для этого грейда
+    private double award = 10000;
+
+    // Метод для изменения ставки зарплаты по умолчанию
+    public void setRate(double rate) {
+        this.rate = rate;
     }
-    public int award() {
-        return 10000;
+    // Метод для изменения ставки премии по умолчанию
+    public void setAward(int award) {
+        this.award = award;
+    }
+
+    public double rate() {
+        return rate;
+    }
+    public double award() {
+        return award;
     }
 }

@@ -1,8 +1,8 @@
-public class ManagerJunior extends Employee {
+public class ManagerMiddle extends Employee {
 
-    public ManagerJunior() {
+    public ManagerMiddle() {
         position = new Manager();
-        grade = new Junior();
+        grade = new Middle();
     }
     // Метод вычисления зарплаты
     public double getSalary() {

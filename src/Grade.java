@@ -1,12 +1,4 @@
 public interface Grade {
     public double bonus();
+    public int slaves();
 }
-
-//public class Grade {
-//    public double bonus;
-//    Subordinates subordinates;
-//
-//    public void performSubordinates() {
-//        subordinates.slaves();
-//    }
-//}

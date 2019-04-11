@@ -1,9 +1,10 @@
-public class DeveloperSenior extends  Employee {
+public class ManagerSenior extends Employee {
 
-    public DeveloperSenior(int slaves) {
-        position = new Developer();
+    public ManagerSenior(int slaves) {
+        position = new Manager();
         grade = new Senior(slaves);
     }
+
     // Метод вычисления зарплаты
     public double getSalary() {
         // Обработка информации по подчинённым
