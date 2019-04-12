@@ -1,6 +1,10 @@
 package Grade;
 
 public class Senior implements Grade {
+    // Название грейда
+    public String name(){
+        return "Senior";
+    }
     // Коэффициент увеличения базовой премии для данного грейда
     public double bonus() {
         return 1.3;

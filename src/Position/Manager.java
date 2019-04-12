@@ -15,6 +15,10 @@ public class Manager implements Position {
         this.award = award;
     }
 
+    // Название должности
+    public String name() {
+        return "Manager";
+    }
     public double rate() {
         return rate;
     }

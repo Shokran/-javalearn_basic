@@ -15,6 +15,10 @@ public class Intern implements Position {
         this.award = award;
     }
 
+    // Название должности
+    public String name() {
+        return "Intern";
+    }
     public double rate() {
         return rate;
     }

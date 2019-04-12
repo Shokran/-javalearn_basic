@@ -9,8 +9,4 @@ public class DeveloperMiddle extends Employee {
         position = new Developer();
         grade = new Middle();
     }
-    // Метод вычисления зарплаты
-    public double getSalary() {
-        return position.rate() + (position.award() * grade.bonus());
-    }
 }

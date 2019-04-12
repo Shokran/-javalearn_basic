@@ -15,6 +15,10 @@ public class Developer implements Position {
         this.award = award;
     }
 
+    // Название должности
+    public String name(){
+        return "Developer";
+    }
     public double rate() {
         return rate;
     }
